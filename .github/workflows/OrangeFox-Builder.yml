@@ -19,7 +19,7 @@ on:
       DEVICE_TREE_BRANCH:
         description: 'Custom Recovery Tree Branch'
         required: true
-        default: 'fox_12.1'
+        default: 'main'
       DEVICE_PATH:
         description: 'Specify your device path.'
         required: true
@@ -40,7 +40,7 @@ on:
       LDCHECK:
         description: 'Path of blobs to check' 
         required: true
-        default: 'system/bin/qseecomd'
+        default: 'system/bin/linexd.sh'
       RECOVERY_TAR:
         description: 'Release recovery.tar For Samsung devices'
         required: false
