@@ -1,0 +1,16 @@
+# ==========================================
+# linex Project
+# ==========================================
+
+# mount point       fstype    device                                flags
+/system             ext4      system                               logical
+/vendor             ext4      vendor                               logical
+/product            ext4      product                              logical
+/odm                ext4      odm                                  logical
+
+/metadata           ext4      /dev/block/by-name/metadata          
+/userdata           f2fs      /dev/block/by-name/userdata          
+
+# Ekstrak storage tambahan untuk eksekusi installer
+/external_sd        vfat      /dev/block/mmcblk0p1  /dev/block/mmcblk0
+/usb_otg            vfat      /dev/block/sdg1       /dev/block/sdg
